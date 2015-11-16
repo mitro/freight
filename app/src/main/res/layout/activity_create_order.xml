@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="rt.dtech.kz.freight.activities.CreateOrderActivity">
+
+    <TextView
+      android:id="@+id/fromAddress"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:text="@string/select_origin"/>
+
+    <TextView
+      android:id="@+id/toAddress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/fromAddress"
+      android:text="@string/select_destination"/>
+
+    <TextView
+      android:id="@+id/orderDatePicker"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/toAddress"
+      android:text="@string/select_order_date_and_time"/>
+
+    <Spinner
+      android:id="@+id/cargoTypesSpinner"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/orderDatePicker"/>
+
+    <TextView
+      android:id="@+id/weightTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/cargoTypesSpinner"
+      android:text="@string/weight"/>
+
+    <SeekBar
+      android:id="@+id/weightSeekBar"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/cargoTypesSpinner"
+      android:layout_toRightOf="@id/weightTextView"
+      android:max="80000"/>
+
+    <TextView
+      android:id="@+id/volumeTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/weightTextView"
+      android:text="@string/volume"/>
+
+    <SeekBar
+      android:id="@+id/volumeSeekBar"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/weightTextView"
+      android:layout_toRightOf="@id/volumeTextView"
+      android:max="100"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/placeOrderButton"
+      android:layout_centerHorizontal="true"
+      android:text="Примерная стоимость 5200 тг"/>
+
+    <Button
+      android:id="@id/placeOrderButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:text="@string/place_order"/>
+
+</RelativeLayout>

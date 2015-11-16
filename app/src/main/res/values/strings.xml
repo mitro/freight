@@ -1,9 +1,5 @@
 <resources>
   <string name="app_name">Freight</string>
-  <string name="from">Откуда</string>
-  <string name="to">Куда</string>
-  <string name="not_selected">Еще не выбрано</string>
-  <string name="find">Найти</string>
   <string name="phone_number">Номер телефона</string>
   <string name="user_name">Имя</string>
   <string name="customer">Заказчик</string>
@@ -11,10 +7,23 @@
   <string name="get_registration_code">Получить код регистрации</string>
   <string name="registration_code">Полученный код регистрации</string>
   <string name="confirm_registration">Подтвердить регистрацию</string>
+  <string name="select_origin">Выберите место отправки</string>
+  <string name="select_destination">Выберите место назначения</string>
+  <string name="place_order">Разместить заказ</string>
+  <string name="select_order_date_and_time">Выберите дату и время</string>
+  <string name="weight">Вес (кг)</string>
+  <string name="volume">Объем (м3)</string>
   <string-array name="cities">
     <item>Астана</item>
     <item>Алматы</item>
     <item>Караганда</item>
     <item>Павлодар</item>
+  </string-array>
+  <string-array name="cargoTypes">
+    <item>Негабаритный груз</item>
+    <item>Крупногабаритный груз</item>
+    <item>Сыпучий груз</item>
+    <item>Жидкий груз</item>
+    <item>Газообразный груз</item>
   </string-array>
 </resources>
