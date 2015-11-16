@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingLeft="@dimen/activity_horizontal_margin"
+  android:paddingRight="@dimen/activity_horizontal_margin"
+  android:paddingTop="@dimen/activity_vertical_margin"
+  android:paddingBottom="@dimen/activity_vertical_margin"
+  tools:context="rt.dtech.kz.freight.activities.TruckDetailActivity">
+
+  <Spinner
+    android:id="@+id/makesSpinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"/>
+
+  <Spinner
+    android:id="@+id/modelsSpinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/makesSpinner"/>
+
+  <EditText
+    android:id="@+id/carryingEditText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/modelsSpinner"
+    android:inputType="number"
+    android:hint="@string/carrying"/>
+  
+  <EditText
+    android:id="@+id/makeYearEditText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/carryingEditText"
+    android:inputType="number"
+    android:hint="@string/make_year"/>
+  
+  <Spinner
+    android:id="@+id/bodyTypesSpinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/makeYearEditText"/>
+
+  <Button
+    android:id="@+id/saveTruckDetailButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/save"
+    android:onClick="onSaveTruckDetailButtonClicked"/>
+
+</RelativeLayout>

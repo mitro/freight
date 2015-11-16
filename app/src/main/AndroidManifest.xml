@@ -18,10 +18,6 @@
         <activity android:name=".activities.CreateOrderActivity" >
         </activity>
         <activity android:name=".activities.RegistrationActivity" >
-          <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-          </intent-filter>
         </activity>
         <activity android:name=".activities.RegistrationCodeActivity" >
         </activity>
@@ -44,6 +40,13 @@
         <activity android:name=".activities.OrderDetailActivity" >
         </activity>
         <activity android:name=".activities.CustomerOrderListActivity" >
+        </activity>
+        <activity android:name=".activities.TruckDetailActivity" >
+          <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
         </activity>
     </application>
 
