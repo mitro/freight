@@ -26,4 +26,5 @@
     <item>Жидкий груз</item>
     <item>Газообразный груз</item>
   </string-array>
+  <string name="title_activity_map">Map</string>
 </resources>
