@@ -69,7 +69,7 @@
       android:layout_height="wrap_content"
       android:layout_above="@+id/placeOrderButton"
       android:layout_centerHorizontal="true"
-      android:text="Примерная стоимость 5200 тг"/>
+      android:text="Примерная стоимость 52000 тг"/>
 
     <Button
       android:id="@id/placeOrderButton"

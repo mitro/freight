@@ -26,5 +26,13 @@
     <item>Жидкий груз</item>
     <item>Газообразный груз</item>
   </string-array>
+  <string-array name="offers">
+    <item>Валера, Mercedes, 56000 тг</item>
+    <item>Иван, МАЗ, 54000 тг</item>
+    <item>Санжар, КамАЗ, 51000 тг</item>
+  </string-array>
   <string name="title_activity_map">Map</string>
+  <string name="order_fulfilled">Заказ выполнен</string>
+  <string name="cancel_order">Отменить заказ</string>
+  <string name="offers">Предложения:</string>
 </resources>
