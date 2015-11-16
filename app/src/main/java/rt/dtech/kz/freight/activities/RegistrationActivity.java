@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import rt.dtech.kz.freight.R;
+import rt.dtech.kz.freight.domain.UserType;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -37,6 +39,16 @@ public class RegistrationActivity extends AppCompatActivity {
   }
 
   public void onGetCodeButtonClicked(View view) {
-    startActivity(new Intent(this, RegistrationCodeActivity.class));
+    Intent intent = new Intent(this, RegistrationCodeActivity.class);
+    intent.putExtra("userType", getSelectedUserType());
+
+    startActivity(intent);
+  }
+
+  private UserType getSelectedUserType() {
+    if (((RadioButton) findViewById(R.id.customerRadioButton)).isChecked()) return UserType.Customer;
+    if (((RadioButton) findViewById(R.id.driverRadioButton)).isChecked()) return UserType.Driver;
+
+    throw new IllegalStateException();
   }
 }

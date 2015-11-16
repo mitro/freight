@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import rt.dtech.kz.freight.R;
+import rt.dtech.kz.freight.domain.UserType;
 
 public class RegistrationCodeActivity extends AppCompatActivity {
 
@@ -18,6 +19,16 @@ public class RegistrationCodeActivity extends AppCompatActivity {
   }
 
   public void onConfirmRegistrationButtonClicked(View view) {
-    startActivity(new Intent(this, CreateOrderActivity.class));
+    UserType userType = (UserType) getIntent().getExtras().get("userType");
+
+    if (userType == UserType.Customer) {
+      startActivity(new Intent(this, CreateOrderActivity.class));
+    }
+    else if (userType == UserType.Driver) {
+      startActivity(new Intent(this, TruckDetailActivity.class));
+    }
+    else {
+      throw new IllegalStateException();
+    }
   }
 }
