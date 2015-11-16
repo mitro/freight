@@ -8,24 +8,26 @@
     tools:context="rt.dtech.kz.freight.activities.CreateOrderActivity">
 
     <TextView
-      android:id="@+id/fromAddress"
+      android:id="@+id/originTextView"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentTop="true"
-      android:text="@string/select_origin"/>
+      android:text="@string/select_origin"
+      android:onClick="onOriginTextViewClicked"/>
 
     <TextView
-      android:id="@+id/toAddress"
+      android:id="@+id/destinationTextView"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_below="@id/fromAddress"
-      android:text="@string/select_destination"/>
+      android:layout_below="@id/originTextView"
+      android:text="@string/select_destination"
+      android:onClick="onDestinationTextViewClicked"/>
 
     <TextView
       android:id="@+id/orderDatePicker"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_below="@id/toAddress"
+      android:layout_below="@id/destinationTextView"
       android:text="@string/select_order_date_and_time"/>
 
     <Spinner

@@ -32,4 +32,12 @@ public class CreateOrderActivity extends AppCompatActivity {
   public void onPlaceOrderButtonClicked(View view) {
     startActivity(new Intent(this, OrderDetailActivity.class));
   }
+
+  public void onOriginTextViewClicked(View view) {
+    startActivity(new Intent(this, MapActivity.class));
+  }
+
+  public void onDestinationTextViewClicked(View view) {
+    startActivity(new Intent(this, MapActivity.class));
+  }
 }
