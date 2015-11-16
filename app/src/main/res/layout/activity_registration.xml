@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingLeft="@dimen/activity_horizontal_margin"
+  android:paddingRight="@dimen/activity_horizontal_margin"
+  android:paddingTop="@dimen/activity_vertical_margin"
+  android:paddingBottom="@dimen/activity_vertical_margin"
+  tools:context="rt.dtech.kz.freight.activities.RegistrationActivity">
+
+  <EditText
+    android:id="@+id/phoneEdit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/phone_number"
+    android:inputType="phone"
+    android:layout_alignParentTop="true"/>
+
+  <EditText
+    android:id="@+id/userNameEdit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/user_name"
+    android:layout_below="@id/phoneEdit"/>
+
+  <Spinner
+    android:id="@+id/citiesSpinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/userNameEdit"/>
+
+  <RadioGroup
+    android:id="@+id/userTypeRadioGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/citiesSpinner">
+    <RadioButton
+      android:id="@+id/customerRadioButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/customer"/>
+    <RadioButton
+      android:id="@+id/driverRadioButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/driver"/>
+  </RadioGroup>
+
+  <Button
+    android:id="@+id/getCodeButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/get_registration_code"/>
+
+</RelativeLayout>

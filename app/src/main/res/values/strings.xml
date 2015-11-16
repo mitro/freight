@@ -1,7 +1,18 @@
 <resources>
-    <string name="app_name">Freight</string>
-    <string name="from">Откуда</string>
-    <string name="to">Куда</string>
-    <string name="not_selected">Еще не выбрано</string>
-    <string name="find">Найти</string>
+  <string name="app_name">Freight</string>
+  <string name="from">Откуда</string>
+  <string name="to">Куда</string>
+  <string name="not_selected">Еще не выбрано</string>
+  <string name="find">Найти</string>
+  <string name="phone_number">Номер телефона</string>
+  <string name="user_name">Имя</string>
+  <string name="customer">Заказчик</string>
+  <string name="driver">Водитель</string>
+  <string name="get_registration_code">Получить код регистрации</string>
+  <string-array name="cities">
+    <item>Астана</item>
+    <item>Алматы</item>
+    <item>Караганда</item>
+    <item>Павлодар</item>
+  </string-array>
 </resources>
