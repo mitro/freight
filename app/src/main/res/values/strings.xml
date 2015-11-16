@@ -9,6 +9,8 @@
   <string name="customer">Заказчик</string>
   <string name="driver">Водитель</string>
   <string name="get_registration_code">Получить код регистрации</string>
+  <string name="registration_code">Полученный код регистрации</string>
+  <string name="confirm_registration">Подтвердить регистрацию</string>
   <string-array name="cities">
     <item>Астана</item>
     <item>Алматы</item>
