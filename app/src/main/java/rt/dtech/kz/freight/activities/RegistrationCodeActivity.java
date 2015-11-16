@@ -1,7 +1,9 @@
 package rt.dtech.kz.freight.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import rt.dtech.kz.freight.R;
 
@@ -13,5 +15,9 @@ public class RegistrationCodeActivity extends AppCompatActivity {
     setContentView(R.layout.activity_registration_code);
 
     setTitle("Подтверждение регистрации");
+  }
+
+  public void onConfirmRegistrationButtonClicked(View view) {
+    startActivity(new Intent(this, CreateOrderActivity.class));
   }
 }

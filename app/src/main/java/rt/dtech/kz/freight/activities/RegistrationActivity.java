@@ -1,7 +1,9 @@
 package rt.dtech.kz.freight.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -32,5 +34,9 @@ public class RegistrationActivity extends AppCompatActivity {
   private void setDefaultUserType() {
     RadioGroup group = (RadioGroup) findViewById(R.id.userTypeRadioGroup);
     group.check(R.id.customerRadioButton);
+  }
+
+  public void onGetCodeButtonClicked(View view) {
+    startActivity(new Intent(this, RegistrationCodeActivity.class));
   }
 }

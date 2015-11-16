@@ -18,10 +18,12 @@
     android:hint="@string/registration_code"/>
 
   <Button
+    android:id="@+id/confirmRegistrationButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_centerHorizontal="true"
-    android:text="@string/confirm_registration"/>
+    android:text="@string/confirm_registration"
+    android:onClick="onConfirmRegistrationButtonClicked"/>
 
 </RelativeLayout>

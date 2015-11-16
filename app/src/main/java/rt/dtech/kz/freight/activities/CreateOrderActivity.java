@@ -1,7 +1,9 @@
 package rt.dtech.kz.freight.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -26,4 +28,8 @@ public class CreateOrderActivity extends AppCompatActivity {
       adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
       spinner.setAdapter(adapter);
     }
+
+  public void onPlaceOrderButtonClicked(View view) {
+    startActivity(new Intent(this, OrderDetailActivity.class));
+  }
 }
