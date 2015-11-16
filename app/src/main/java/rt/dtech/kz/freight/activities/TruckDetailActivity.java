@@ -1,5 +1,6 @@
 package rt.dtech.kz.freight.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -47,6 +48,6 @@ public class TruckDetailActivity extends AppCompatActivity {
   }
 
   public void onSaveTruckDetailButtonClicked(View view) {
-    //startActivity(new In);
+    startActivity(new Intent(this, DriverOrderListActivity.class));
   }
 }

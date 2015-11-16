@@ -42,11 +42,13 @@
         <activity android:name=".activities.CustomerOrderListActivity" >
         </activity>
         <activity android:name=".activities.TruckDetailActivity" >
-          <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-          </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.DriverOrderListActivity" >
         </activity>
     </application>
 

@@ -7,12 +7,12 @@ import android.widget.ListView;
 
 import rt.dtech.kz.freight.R;
 
-public class CustomerOrderListActivity extends AppCompatActivity {
+public class DriverOrderListActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_customer_order_list);
+    setContentView(R.layout.activity_driver_order_list);
 
     setTitle("Мои заказы");
 
@@ -20,9 +20,9 @@ public class CustomerOrderListActivity extends AppCompatActivity {
   }
 
   private void fillOrderListView() {
-    ListView list = (ListView) findViewById(R.id.customerOrderListView);
+    ListView list = (ListView) findViewById(R.id.driverOrderListView);
     ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-      this, R.array.customer_orders, android.R.layout.simple_list_item_1);
+      this, R.array.driver_orders, android.R.layout.simple_list_item_1);
     adapter.setDropDownViewResource(android.R.layout.simple_list_item_1);
     list.setAdapter(adapter);
   }
