@@ -14,6 +14,8 @@ public class CreateOrderActivity extends AppCompatActivity {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_create_order);
 
+      setTitle("Создание заказа");
+
       fillCargoTypesSpinner();
     }
 

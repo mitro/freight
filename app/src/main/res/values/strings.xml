@@ -13,6 +13,10 @@
   <string name="select_order_date_and_time">Выберите дату и время</string>
   <string name="weight">Вес (кг)</string>
   <string name="volume">Объем (м3)</string>
+  <string name="title_activity_map">Map</string>
+  <string name="order_fulfilled">Заказ выполнен</string>
+  <string name="cancel_order">Отменить заказ</string>
+  <string name="offers">Предложения:</string>
   <string-array name="cities">
     <item>Астана</item>
     <item>Алматы</item>
@@ -31,8 +35,8 @@
     <item>Иван, МАЗ, 54000 тг</item>
     <item>Санжар, КамАЗ, 51000 тг</item>
   </string-array>
-  <string name="title_activity_map">Map</string>
-  <string name="order_fulfilled">Заказ выполнен</string>
-  <string name="cancel_order">Отменить заказ</string>
-  <string name="offers">Предложения:</string>
+  <string-array name="customer_orders">
+    <item>Астана - Павлодар | 30.11.15 15:00</item>
+    <item>Астана, пр. Республики, 12 - Астана, ул. Сейфуллина, 46 | 05.12.15 10:00</item>
+  </string-array>
 </resources>
